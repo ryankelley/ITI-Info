@@ -43,12 +43,11 @@
 			<xsd:import namespace="urn:ihe:iti:xds-b:2007" schemaLocation="../schema/IHE/XDS.b_DocumentRepository.xsd"/> 
 			</xsd:schema> -->
 	</types>
-</message>
 	<message name="CrossGatewayDocumentProvide_Message">
 		<documentation>Cross-Gateway Document Provide</documentation>
 		<part name="body" element="ihe:ProvideAndRegisterDocumentSetRequest" />
 	</message>
-	<message name="CrossGatewayDocumentProvide_Message">
+	<message name="CrossGatewayDocumentProvide_MessageResponse">
 		<documentation>Cross-Gateway Document Provide Response</documentation>
 		<part name="body" element="rs:RegistryResponse" />
 	</message>
@@ -61,7 +60,7 @@
 		</operation>
 	</portType>
 	<binding name="CrossGatewayDocumentProvide_Binding" type="ihe:CrossGatewayDocumentProvide_PortType">
-		<wsaw:UsingAddressing wsdl:required="true" />
+		<wsaw:UsingAddressing />
 
 		<soap12:binding style="document"
 			transport="http://schemas.xmlsoap.org/soap/http" />
