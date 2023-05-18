@@ -53,7 +53,7 @@
 	</message>
 	<portType name="CrossGatewayDocumentProvide_PortType">
 		<operation name="CrossGatewayDocumentRecipient_CrossGatewayDocumentProvide">
-			<input message="ihe:ProvideAndRegisterDocumentSet-b_Message"
+			<input message="urn:ihe:iti:xds-b:2007:ProvideAndRegisterDocumentSet-b_Message"
 				wsaw:Action="urn:ihe:iti:2015:CrossGatewayDocumentProvide" />
 			<output message="ihe:ProvideAndRegisterDocumentSet-bResponse_Message"
 				wsaw:Action="urn:ihe:iti:2015:CrossGatewayDocumentProvideResponse" />
